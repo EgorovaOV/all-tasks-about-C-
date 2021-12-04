@@ -2,11 +2,12 @@
 
 int a = int.Parse(Console.ReadLine());
 
-double y(double a)
+double y (int a)// double это тип данных с дробной частью, так? 
 {
-    double result = 2 * a + a * a;
-    return result;
+    double result = 2 / a + a * a;// это сам алгоритм функции
+    return result;// это что? зачем это
 }
+Console.WriteLine((y));// тут я хочу видеть результат выполнения функции, обращаюсь к методу
 
 
 
