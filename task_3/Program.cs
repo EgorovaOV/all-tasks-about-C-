@@ -10,7 +10,7 @@ if (day == 1)
 }
 else if (day ==2)
 {
-    Console.WriteLine("It is theusday");
+    Console.WriteLine("It is tuesday");
 }
 else if (day ==3)
 {
@@ -18,7 +18,7 @@ else if (day ==3)
 }
 else if (day ==4)
 {
-    Console.WriteLine("It is thuesday");
+    Console.WriteLine("It is thursday");
 }
 else if (day ==5)
 {
