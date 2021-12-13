@@ -27,9 +27,9 @@ void Print(int[] col)
 
 int[] some = { 1, 2, 3, 4, 5, 6, 7 };
 
-//int dlina = 3; //(some.Length / 2);
+int dlina = (some.Length / 2);
 
-int[] someelse = new int [3];
+int[] someelse = new int [dlina];
 
 Fill(some, someelse);
 
