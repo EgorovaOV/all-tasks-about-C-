@@ -19,10 +19,17 @@ void Fill(int[] array, int[] newarray)
 
 void Print(int[] col)
 {
-    for (int i = 0; i < col.Length; i++)
+    int count = col.Length;
+    int z = 0;
+    while (z < count)
     {
-        Console.WriteLine(col[i]);
+        Console.WriteLine(col[z]);
+        z++;
     }
+    //for (int i = 0; i < col.Length; i++)
+   // {
+   //     Console.WriteLine(col[i]);
+   // }
 }
 
 int[] some = { 1, 2, 3, 4, 5, 6, 7 };
