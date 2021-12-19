@@ -23,28 +23,33 @@ void Print(double[] col)
 }
 double Diff(double[] array)
 {
-    for (int index = 0; index < array.Length; index++ )  
+    double max = array[0];
+    double min = array[0];
+    double diff = 0;
+    for (int index = 0; index < array.Length; index++)
     {
-        double max = array[0];
-        double min = array [0];
-        if (array [index] > max)
+        if (array[index] > max)
         {
             max = array[index];
         }
-        else if (array[index] < max)
+        else if (array[index] < min)
         {
             min = array[index];
         }
-        return max;
-        return min;
-        }
+        else max = min;
+        diff = (max - min);
+    }
+    Console.WriteLine($"max is {max}");
+    Console.WriteLine($"min is {min}");
+    Console.WriteLine($"difference is {diff}");
+    return diff;
+    }
 
-}
+    double[] col = new double[5];
 
-double [] col = new double [10];
+    Fill(col);
 
-Fill (col);
+    Print(col);
 
-Print (col);
-
-Diff (col); 
+    double difference = Diff(col);
+    
